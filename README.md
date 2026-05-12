@@ -10,9 +10,9 @@ Basée sur le modèle d'IA **BRIA RMBG-1.4**, l'un des modèles de référence a
 - **Traitement par lot** : lancer toute la file d'attente en un clic
 - **Haute précision** : gestion fine des cheveux, des trous (entre bras, jambes), et des fonds complexes
 - **Modes de finition des bords** :
-  - *Doux* — matte naturel, idéal pour cheveux et fourrure
-  - *Précis* — équilibre entre netteté et naturel (par défaut)
-  - *Net* — contours marqués, optimal pour les "faux fonds" PNG
+  - _Doux_ — matte naturel, idéal pour cheveux et fourrure
+  - _Précis_ — équilibre entre netteté et naturel (par défaut)
+  - _Net_ — contours marqués, optimal pour les "faux fonds" PNG
 - **Téléchargement** : image par image ou tout en archive ZIP
 - **Accélération GPU** automatique via WebGPU si disponible
 - **Confidentialité totale** : aucune donnée ne quitte le navigateur
@@ -47,11 +47,11 @@ Le premier lancement télécharge le modèle d'IA (~85 Mo). Ce modèle est ensui
 
 ## Architecture technique
 
-| Composant | Rôle |
-|-----------|------|
-| `index.html` | Interface complète (HTML / CSS / JS en un seul fichier autonome) |
-| `serve.py` | Serveur HTTP local avec en-têtes COOP/COEP requis par WebAssembly threads |
-| `Démarrer.bat` | Lanceur Windows : démarre le serveur Python et ouvre le navigateur |
+| Composant      | Rôle                                                                      |
+| -------------- | ------------------------------------------------------------------------- |
+| `index.html`   | Interface complète (HTML / CSS / JS en un seul fichier autonome)          |
+| `serve.py`     | Serveur HTTP local avec en-têtes COOP/COEP requis par WebAssembly threads |
+| `Démarrer.bat` | Lanceur Windows : démarre le serveur Python et ouvre le navigateur        |
 
 ### Pile technique
 
@@ -73,10 +73,10 @@ Ces en-têtes activent le mode d'isolation cross-origin, indispensable au moteur
 
 ## Performances
 
-| Configuration | Temps moyen / image (1024×1024) |
-|---------------|--------------------------------|
-| GPU dédié + WebGPU | ~0.5 à 1 s |
-| CPU + WASM (threads) | ~3 à 8 s |
+| Configuration        | Temps moyen / image (1024×1024) |
+| -------------------- | ------------------------------- |
+| GPU dédié + WebGPU   | ~0.5 à 1 s                      |
+| CPU + WASM (threads) | ~3 à 8 s                        |
 
 Le statut du moteur (GPU/CPU) s'affiche au lancement initial.
 
@@ -94,4 +94,4 @@ Le modèle BRIA RMBG-1.4 est distribué sous sa propre licence ([voir conditions
 
 ## Auteur
 
-Yanis Cheze — [yanis.cheze@open-lake.com](mailto:yanis.cheze@open-lake.com)
+Yanis Cheze — [yanischeze@gmail.com](mailto:yanischeze@gmail.com)
