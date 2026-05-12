@@ -26,7 +26,7 @@ Basée sur le modèle d'IA **BRIA RMBG-1.4**, l'un des modèles de référence a
 
 ### Windows
 
-Double-cliquer sur `Démarrer.bat`. Le serveur local se lance et l'application s'ouvre automatiquement dans le navigateur par défaut.
+Double-cliquer sur `start.bat`. Le serveur local se lance et l'application s'ouvre automatiquement dans le navigateur par défaut.
 
 ### macOS / Linux
 
@@ -47,11 +47,11 @@ Le premier lancement télécharge le modèle d'IA (~85 Mo). Ce modèle est ensui
 
 ## Architecture technique
 
-| Composant      | Rôle                                                                      |
-| -------------- | ------------------------------------------------------------------------- |
-| `index.html`   | Interface complète (HTML / CSS / JS en un seul fichier autonome)          |
-| `serve.py`     | Serveur HTTP local avec en-têtes COOP/COEP requis par WebAssembly threads |
-| `Démarrer.bat` | Lanceur Windows : démarre le serveur Python et ouvre le navigateur        |
+| Composant    | Rôle                                                                      |
+| ------------ | ------------------------------------------------------------------------- |
+| `index.html` | Interface complète (HTML / CSS / JS en un seul fichier autonome)          |
+| `serve.py`   | Serveur HTTP local avec en-têtes COOP/COEP requis par WebAssembly threads |
+| `start.bat`  | Lanceur Windows : démarre le serveur Python et ouvre le navigateur        |
 
 ### Pile technique
 
